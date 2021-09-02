@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="pl.controllers.SaveLoadController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="200.0"/>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#saveDataBase" prefHeight="80.0" prefWidth="150.0"
+                        text="Zapisz baze do pliku"/>
+                <Button mnemonicParsing="false" onAction="#loadDataBase" prefHeight="80.0" prefWidth="150.0"
+                        text="Wczytaj baze z pliku"/>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <TextField fx:id="savePathTextField" prefWidth="200.0"/>
+                <TextField fx:id="loadPathTextField" prefWidth="200.0"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>
